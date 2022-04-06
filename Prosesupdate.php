@@ -9,7 +9,7 @@ $query=mysqli_query($koneksi, "UPDATE data_barang SET id='$id', nama='$nama', ju
 or die(mysqli_error($koneksi));
 
 if($query){
-    header("Location: index.php");
+    header("Location: tambah.php");
 } else{
     echo "Data Gagal di Update";
 }
